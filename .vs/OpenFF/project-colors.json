@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f63be5c2-96ee-4083-81e3-344cff4e4988": {
+      "ProjectGuid": "f63be5c2-96ee-4083-81e3-344cff4e4988",
+      "DisplayName": "OpenFF.Backend",
+      "ColorIndex": 0
+    },
+    "c27eea33-a994-40e7-829f-daa03143de1b": {
+      "ProjectGuid": "c27eea33-a994-40e7-829f-daa03143de1b",
+      "DisplayName": "OpenFF.Frontend.Blazor",
+      "ColorIndex": 1
+    },
+    "c14ed71d-ebc6-47be-8f52-96b0d621440b": {
+      "ProjectGuid": "c14ed71d-ebc6-47be-8f52-96b0d621440b",
+      "DisplayName": "OpenFF.Backend.API",
+      "ColorIndex": 2
+    },
+    "99371cfe-784f-409d-875e-4ae1c7b543b3": {
+      "ProjectGuid": "99371cfe-784f-409d-875e-4ae1c7b543b3",
+      "DisplayName": "OpenFF.Backend.API",
+      "ColorIndex": 3
+    },
+    "7362cea7-381b-4952-84f2-def391c51891": {
+      "ProjectGuid": "7362cea7-381b-4952-84f2-def391c51891",
+      "DisplayName": "OpenFF.DataAccessLayer",
+      "ColorIndex": 4
+    },
+    "5fb5101f-1979-4f97-a067-7a5f47d91c96": {
+      "ProjectGuid": "5fb5101f-1979-4f97-a067-7a5f47d91c96",
+      "DisplayName": "OpenFF.Adapter.LiteDB",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
