@@ -136,3 +136,5 @@ _NCrunch*
 .vs/
 
 *.db
+
+OpenFF.Backend/wwwroot/
