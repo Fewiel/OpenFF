@@ -60,7 +60,7 @@ public class RankRepository : IRankRepository
 
     public void Update(IRank data)
     {
-        if (data is not User r)
+        if (data is not Rank r)
             throw new UnsupportedDatabaseException();
 
         Col.Update(r);
