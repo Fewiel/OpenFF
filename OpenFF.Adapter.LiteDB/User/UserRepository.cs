@@ -31,14 +31,14 @@ public class UserRepository : IUserRepository
 
     public OneOf<IUser, None> Get(long id)
     {
-        var u = Col.FindOne(x => x.ID == id);
+        var u = Col.Include(x => x.Rank).FindOne(x => x.ID == id);
         if (u == null)
             return new None();
 
         return u;
     }
 
-    public IEnumerable<IUser> GetAll() => Col.FindAll();
+    public IEnumerable<IUser> GetAll() => Col.Include(x => x.Rank).FindAll();
 
     public long GetCount() => Col.LongCount();
 
@@ -51,7 +51,8 @@ public class UserRepository : IUserRepository
         if (orderField == "ID")
             orderField = "_id";
 
-        return Col.Query().OrderBy(orderField, orderAsc ? 1 : 0).Skip((int)offset).Limit(amount).ToEnumerable();
+        return Col.Include(x => x.Rank).Query().OrderBy(orderField, orderAsc ? 1 : 0)
+            .Skip((int)offset).Limit(amount).ToEnumerable();
     }
 
     public IUser New(long id, string username, string password, string firstname, string lastname,
