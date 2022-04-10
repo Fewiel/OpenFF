@@ -1,6 +1,10 @@
 ﻿using LiteDB;
+using OpenFF.Adapter.LiteDB.Group;
 using OpenFF.DataAccessLayer;
+using OpenFF.DataAccessLayer.Brigade;
+using OpenFF.DataAccessLayer.Department;
 using OpenFF.DataAccessLayer.Exceptions;
+using OpenFF.DataAccessLayer.Group;
 using OpenFF.DataAccessLayer.Rank;
 using OpenFF.DataAccessLayer.User;
 
@@ -12,9 +16,15 @@ public class Database : IDatabase, IDisposable
 
     private UserRepository? _userRepository;
     private RankRepository? _rankRepository;
+    private DepartmentRepository? _departmentRepository;
+    private BrigadeRepository? _brigadeRepository;
+    private GroupRepository? _groupRepository;
 
     public IUserRepository UserRepository => _userRepository ?? throw new UnconfiguredDatabaseException();
     public IRankRepository RankRepository => _rankRepository ?? throw new UnconfiguredDatabaseException();
+    public IDepartmentRepository DepartmentRepository => _departmentRepository ?? throw new UnconfiguredDatabaseException();
+    public IBrigadeRepository BrigadeRepository => _brigadeRepository ?? throw new UnconfiguredDatabaseException();
+    public IGroupRepository GroupRepository => _groupRepository ?? throw new UnconfiguredDatabaseException();
 
     public void Configure(string connectionString)
     {
@@ -33,6 +43,9 @@ public class Database : IDatabase, IDisposable
 
         _userRepository = new UserRepository(DB.GetCollection<User>("Users"));
         _rankRepository = new RankRepository(DB.GetCollection<Rank>("Ranks"));
+        _departmentRepository = new DepartmentRepository(DB.GetCollection<Department>("Departments"));
+        _brigadeRepository = new BrigadeRepository(DB.GetCollection<Brigade>("Brigardes"));
+        _groupRepository = new GroupRepository(DB.GetCollection<Group>("Groups"));
     }
 
     public void Dispose()

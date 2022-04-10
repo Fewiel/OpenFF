@@ -1,6 +1,6 @@
 ﻿using OpenFF.DataAccessLayer.Department;
 
-namespace OpenFF.DataAccessLayer.Groups;
+namespace OpenFF.DataAccessLayer.Group;
 
 public interface IGroup
 {
