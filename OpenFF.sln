@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFF.Backend", "OpenFF.Backend\OpenFF.Backend.csproj", "{F63BE5C2-96EE-4083-81E3-344CFF4E4988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenFF.Backend", "OpenFF.Backend\OpenFF.Backend.csproj", "{F63BE5C2-96EE-4083-81E3-344CFF4E4988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFF.Frontend.Blazor", "OpenFF.Frontend.Blazor\OpenFF.Frontend.Blazor.csproj", "{C27EEA33-A994-40E7-829F-DAA03143DE1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenFF.Frontend.Blazor", "OpenFF.Frontend.Blazor\OpenFF.Frontend.Blazor.csproj", "{C27EEA33-A994-40E7-829F-DAA03143DE1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFF.Backend.API", "OpenFF.Backend.API\OpenFF.Backend.API.csproj", "{99371CFE-784F-409D-875E-4AE1C7B543B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenFF.Backend.API", "OpenFF.Backend.API\OpenFF.Backend.API.csproj", "{99371CFE-784F-409D-875E-4AE1C7B543B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFF.DataAccessLayer", "OpenFF.DataAccessLayer\OpenFF.DataAccessLayer.csproj", "{7362CEA7-381B-4952-84F2-DEF391C51891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenFF.DataAccessLayer", "OpenFF.DataAccessLayer\OpenFF.DataAccessLayer.csproj", "{7362CEA7-381B-4952-84F2-DEF391C51891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFF.Adapter.LiteDB", "OpenFF.Adapter.LiteDB\OpenFF.Adapter.LiteDB.csproj", "{5FB5101F-1979-4F97-A067-7A5F47D91C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenFF.Adapter.LiteDB", "OpenFF.Adapter.LiteDB\OpenFF.Adapter.LiteDB.csproj", "{5FB5101F-1979-4F97-A067-7A5F47D91C96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
