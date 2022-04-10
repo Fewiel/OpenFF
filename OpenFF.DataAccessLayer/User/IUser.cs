@@ -1,4 +1,6 @@
-﻿namespace OpenFF.DataAccessLayer.User;
+﻿using OpenFF.DataAccessLayer.Rank;
+
+namespace OpenFF.DataAccessLayer.User;
 
 public interface IUser
 {
@@ -10,13 +12,13 @@ public interface IUser
     string Email { get; }
     string Phone { get; }
     DateTimeOffset Birthday { get; }
-    long Rank { get; }
+    IRank Rank { get; }
     string Street { get; }
     string HouseNbr { get; }
     string AdditionalAddress { get; }
     string City { get; }
     string PostalCode { get; }
-    DateTimeOffset Created { get; }
+    DateTimeOffset DateTimeCreated { get; }
     DateTimeOffset LastLogin { get; }
     DateTimeOffset LastChange { get; }
 }

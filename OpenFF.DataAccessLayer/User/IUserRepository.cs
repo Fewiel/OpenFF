@@ -1,9 +1,11 @@
-﻿namespace OpenFF.DataAccessLayer.User;
+﻿using OpenFF.DataAccessLayer.Rank;
+
+namespace OpenFF.DataAccessLayer.User;
 
 public interface IUserRepository : IRepositoryBase<IUser>
 {
     IUser New(long id, string username, string password, string firstname, string lastname,
-        string email, string phone, DateTimeOffset birthday, long rank, string street,
+        string email, string phone, DateTimeOffset birthday, IRank rank, string street,
         string houseNbr, string additionalAddress, string city, string postalCode,
-        DateTimeOffset created, DateTimeOffset lastLogin, DateTimeOffset lastChange);
+        DateTimeOffset dateTimeCreated, DateTimeOffset lastLogin, DateTimeOffset lastChange);
 }

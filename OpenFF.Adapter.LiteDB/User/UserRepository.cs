@@ -2,6 +2,7 @@
 using OneOf;
 using OneOf.Types;
 using OpenFF.DataAccessLayer.Exceptions;
+using OpenFF.DataAccessLayer.Rank;
 using OpenFF.DataAccessLayer.User;
 
 namespace OpenFF.Adapter.LiteDB;
@@ -54,12 +55,12 @@ public class UserRepository : IUserRepository
     }
 
     public IUser New(long id, string username, string password, string firstname, string lastname,
-        string email, string phone, DateTimeOffset birthday, long rank, string street, string houseNbr,
+        string email, string phone, DateTimeOffset birthday, IRank rank, string street, string houseNbr,
         string additionalAddress, string city, string postalCode,
-        DateTimeOffset created, DateTimeOffset lastLogin, DateTimeOffset lastChange)
+        DateTimeOffset dateTimeCreated, DateTimeOffset lastLogin, DateTimeOffset lastChange)
     {
         return new User(id, username, password, firstname, lastname, email, phone, birthday, rank,
-            street, houseNbr, additionalAddress, city, postalCode, created, lastLogin, lastChange);
+            street, houseNbr, additionalAddress, city, postalCode, dateTimeCreated, lastLogin, lastChange);
     }
 
     public void Update(IUser data)
