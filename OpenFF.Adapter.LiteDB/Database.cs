@@ -1,5 +1,4 @@
 ﻿using LiteDB;
-using OpenFF.Adapter.LiteDB.Group;
 using OpenFF.DataAccessLayer;
 using OpenFF.DataAccessLayer.Brigade;
 using OpenFF.DataAccessLayer.Department;
