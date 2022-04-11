@@ -6,4 +6,6 @@ public interface IBrigadeRepository : IRepositoryBase<IBrigade>
 {
     IBrigade New(long id, string name, IDepartment department, string street,
         string HouseNbr, string additionalAddress, string city, string postalCode, string email, string phone);
+
+    IEnumerable<IBrigade> BrigadesByDepartment(IDepartment department);
 }

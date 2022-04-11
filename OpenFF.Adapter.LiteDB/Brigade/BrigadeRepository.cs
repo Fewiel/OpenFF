@@ -17,6 +17,9 @@ public class BrigadeRepository : IBrigadeRepository
         Col.EnsureIndex(x => x.ID);
     }
 
+    public IEnumerable<IBrigade> BrigadesByDepartment(IDepartment department)
+        => Col.Find(x => x.ID == department.ID);
+
     public void Create(IBrigade data)
     {
         if (data is not Brigade b)
